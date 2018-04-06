@@ -1,0 +1,27 @@
+#restaurants-list {
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+#grid {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    //grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+        "restaurant-photo map";
+}
+
+#restaurant-container {
+    margin-top: 80px;
+    grid-area: restaurant-photo;
+}
+
+.inside #map-container {
+    margin-top: 80px;
+    grid-area: map;
+    height: auto;
+}
+
+#maincontent {
+    max-width: 80rem;
+    margin: 0 auto;
+}
